@@ -1,0 +1,8 @@
+.container{
+    background-image: url(../pictures/contactus.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-color: rgb(48, 74, 92);
+    background-position: 50% 10px;
+}

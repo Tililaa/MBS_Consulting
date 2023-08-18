@@ -1,9 +1,8 @@
 .p1{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    font-family: monospace;
-    font-size: 60px;
+    font-size: 5vw;
     color: white;
 }
 
@@ -11,21 +10,98 @@
     display: flex;
     justify-content: center;
     font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 60px;
+    font-size: 5vw;
     color: rgb(62, 176, 211);
 }
 
-.bouton{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.row{
+    justify-content: center;
 }
 
-.bouton a{
+.bouton{
+    align-items: center;
+}
+
+.bouton .row{
+    text-align: center;
+}
+
+.bouton .btn{
     color: white;
+    margin: 3vw 3vw;
+    padding: 6vw 4vw;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+.btn-close{
+    margin-bottom: 50px;
+}
+
+.data{
     text-decoration: none;
-    border: 1px solid white;
-    border-radius: 10%;
-    padding: 50px 50px;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(9px);
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: none;
+}
+
+.cloud{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(9px);
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: none;
+}
+
+.devops{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(9px);
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: none;
+}
+
+.digital{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(9px);
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: none;
+}
+
+.contenu1{
+    display: block;
+    margin-top: -600px;
+}
+
+.contenu2{
+    display: block;
+    margin-top: -600px;
+}
+
+.contenu3{
+    display: block;
+    margin-top: -600px;
+}
+
+.contenu4{
+    display: block;
+    margin-top: -600px;
 }

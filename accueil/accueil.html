@@ -1,66 +1,234 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="accueil.css">
-    <link rel="stylesheet" href="../header.css">
-    <title>MBS CONSULTING</title>
-    <link rel="chortcut icon" href="../pictures/logo.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container-fluid">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="accueil.css">
+        <link rel="stylesheet" href="../header.css">
+        <title>MBS CONSULTING</title>
+        <link rel="chortcut icon" href="../pictures/logo.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <header>
             <div class="logo">
                 <img src="../pictures/logo.jpg" alt="logo entreprise" width="140px" height="45px"/>
             </div>
-            <div>
-                <ul class="menu">
-                    <li><a href="accueil.html"class="active">ACCUEIL</a></li>
-                    <li><a href="../services/services.html">NOS SERVICES</a></li>
-                    <li><a href="../valeurs/valeurs.html">NOS VALEURS</a></li>
-                    <li><a href="../objectifs/objectifs.html">NOS OBJECTIFS</a></li>
-                    <li><a href="../contacts/contacts.html">CONTACTEZ-NOUS</a></li>
+            
+            <!-- menu de navigation pour les grands écrans -->
+            <div class="nav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link active" href="accueil.html">ACCUEIL</a></li>
+                    <li class="nav-item"><a href="../services/services.html">NOS SERVICES</a></li>
+                    <li class="nav-item"><a href="../valeurs/valeurs.html">NOS VALEURS</a></li>
+                    <li class="nav-item"><a href="../objectifs/objectifs.html">NOS OBJECTIFS</a></li>
+                    <li class="nav-item"><a href="../contacts/contacts.html">CONTACTEZ-NOUS</a></li>
+                </ul>
+            </div>
+    
+            <!--menu de navigation pour les petits écrans -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="accueil.html">ACCUEIL</a></li>
+                  <li><a class="dropdown-item" href="../services/services.html">NOS SERVICES</a></li>
+                  <li><a class="dropdown-item" href="../valeurs/valeurs.html">NOS VALEURS</a></li>
+                  <li><a class="dropdown-item" href="../objectifs/objectifs.html">NOS OBJECTIFS</a></li>
+                  <li><a class="dropdown-item" href="../contacts/contacts.html">CONTACTEZ-NOUS</a></li>
                 </ul>
             </div>
         </header>
-
+    
         <div class="links">
             <a href="https://fr.indeed.com/emplois?q=MBS+Consulting&l=Groslay+(95)&radius=0"><img src="../pictures/indeed.jpg" alt="indeed"></a>
             <a href="https://fr.indeed.com/emplois?q=MBS+Consulting&l=Groslay+(95)&radius=0"><img src="../pictures/linkedin.jpg" alt="linkedin"></a>
             <a href="###"_land><img src="../pictures/candidature.jpg" alt="candidature-spontannée"></a>
         </div>
-
-        <div class="container">
+    
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-xl-12 col-md-12 col-lg-12">
                     <p class="p1">
                         Les meilleures informations
                     </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-12 col-md-12">
                     <p class="p2">
                         sur le monde virtuel
                     </p>
                 </div>
             </div>
-
             <div class="bouton">
                 <div class="row">
-                    <div class="col-xl-3 col-md-3">
-                        <a href="##" class="btn">Data</a>
+                    <div class="col-lg-2 col-sm-6 col-xs-12 col-12">
+                        <div class="bout1"><button type="button" class="btn">Data</button></div>
                     </div>
-                    <div class="col-xl-3 col-md-3">
-                        <a href="##" class="btn">Cloud</a>
+                    <div class="col-lg-2 col-sm-6 col-xs-12 col-12">
+                        <div class="bout2"><button type="button" class="btn">Cloud</button></div>
                     </div>
-                    <div class="col-xl-3 col-md-3">
-                        <a href="##" class="btn">DevOps</a>
+                    <div class="col-lg-2 col-sm-6 col-xs-12 col-12">
+                        <div class="bout3"><button type="button" class="btn">DevOps</button></div>
                     </div>
-                    <div class="col-xl-3 col-md-3">
-                        <a href="##" class="btn">Digital</a>
+                    <div class="col-lg-2 col-sm-6 col-xs-12 col-12">
+                        <div class="bout4"><button type="button" class="btn">Digital</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- contenu data -->
+            <div class="data">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="col-lg-12">
+                    <h1>Notre Mission autour de la Data</h1>
+                    <p>Vous accompagner des directions générales jusqu’aux métiers à faire le meilleur usage de votre data pour relever vos grands enjeux métiers</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="../pictures/data/big_data.png" alt="big data">
+                        <h3>Big and Fast Data</h3>
+                        <p>Identification, sécurisation et gouvernance de vos données clés avec les plateformes et les outils de calcul et de visualisation les plus appropriés</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/data/data_science.png" alt="data science">
+                        <h3>Data Science</h3>
+                        <p>La modélisation mathématique et les techniques de Machine Learning apportent un cycle continu d'amélioration et de compréhension de vos données métiers brutes</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/data/data_eng.png" alt="data engineering">
+                        <h3>Data Engineering</h3>
+                        <p>Industrialisation des projets de Data science et optimisation du déploiement, maintenance et gestion du cycle de vie des modèles</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/data/data_analy.png" alt="data analytics">
+                        <h3>Data Analytics</h3>
+                        <p>Automatisation de la gestion des datamarts qui serait le point de vérité à jour à disposition der tout utilisateur de donnée.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- contenu cloud -->
+            <div class="cloud">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="col-lg-12">
+                    <h1>Notre Mission autour du Cloud</h1>
+                    <p>Être garant de la réussite de votre stratégie cloud</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="../pictures/cloud/sysops.png" alt="big data">
+                        <h3>SysOps</h3>
+                        <p>Assurance du bon fonctionnement du système, réseau et services cloud</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/cloud/finops.png" alt="data science">
+                        <h3>FinOps</h3>
+                        <p>Comprendre les enjeux financiers de l’entrepris Contrôler le niveau de facturation Optimiser les usages des services cloud</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/cloud/noops.png" alt="data engineering">
+                        <h3>NoOps</h3>
+                        <p>Maitrise des coûts de calcule en faisant tourner les applications sur des infrastructures éphémères</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/cloud/secops.png" alt="data analytics">
+                        <h3>SecOps</h3>
+                        <p>Collaboration améliorée entre la sécurité et les opérations, réduction des risques et meilleure capacité à protéger votre entreprise contre toutes sortes de menaces.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- contenu devops -->
+            <div class="devops">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="col-lg-12">
+                    <h1>Notre Mission autour du DevOps</h1>
+                    <p>Vous garantir la qualité et la sécurité des passerelles d’interopérabilité entre l’innovation et l’exploitation</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="../pictures/devops/1.png" alt="big data">
+                        <h3>Intégration Continue</h3>
+                        <p>Automatisation des actions d’Intégration des artifacts logiciels CI</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/devops/2.png" alt="data science">
+                        <h3>Déploiement Continu</h3>
+                        <p>Création et déploiement des l’infrastructure (Infra As Code) Automatisation des actions de Déploiements des artifacts logiciels (CD)</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/devops/3.png" alt="data engineering">
+                        <h3>Assurance Qualité</h3>
+                        <p>Maitriser et mesurer le niveau de qualité des livraisons logicielles</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/devops/4.png" alt="data analytics">
+                        <h3>Automatisation des Tests</h3>
+                        <p>Gagner en temps et en qualité en automatisant les tests techniques et fonctionnels</p>
+                    </div>
+                </div>
+            </div>
+            <!-- contenu digital -->
+            <div class="digital">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="col-lg-12">
+                    <h1>Notre Mission autour du Digital</h1>
+                    <p>Vous assurer un accompagnement global pour réussir votre révolution numérique</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="../pictures/digital/1.png" alt="big data">
+                        <h3>Conseil & AMOA</h3>
+                        <p>Pilotage des projets digitaux</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/digital/2.png" alt="data science">
+                        <h3>UI/UX Design</h3>
+                        <p>Amélioration l’expérience utilisateur sur une plateforme WEB ou/et Mobile</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/digital/3.png" alt="data engineering">
+                        <h3>Développement</h3>
+                        <p>Conception, développement et mise au point des projets d’application Web ou/et Mobile</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../pictures/digital/4.png" alt="data analytics">
+                        <h3>Architecture</h3>
+                        <p>Architecture technique et urbanisation des systèmes d’information</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
+    <script>
+        const btn1 = document.querySelector(".bout1")
+        const contenu_data = document.querySelector(".data")
+        
+        btn1.addEventListener('click',()=>{
+        contenu_data.classList.toggle('contenu1')
+        })
+    
+        const btn2 = document.querySelector(".bout2")
+        const contenu_cloud = document.querySelector(".cloud")
+        
+        btn2.addEventListener('click',()=>{
+        contenu_cloud.classList.toggle('contenu2')
+        })
+    
+        const btn3 = document.querySelector(".bout3")
+        const contenu_devops = document.querySelector(".devops")
+        
+        btn3.addEventListener('click',()=>{
+        contenu_devops.classList.toggle('contenu3')
+        })
+    
+        const btn4 = document.querySelector(".bout4")
+        const contenu_digital = document.querySelector(".digital")
+        
+        btn4.addEventListener('click',()=>{
+        contenu_digital.classList.toggle('contenu4')
+        })
+    </script>
 </html>

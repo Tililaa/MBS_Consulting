@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="candidature.css">
+    <link rel="stylesheet" href="../header.css">
+    <title>MBS CONSULTING</title>
+    <link rel="chortcut icon" href="../pictures/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../pictures/logo.jpg" alt="logo entreprise" width="140px" height="45px"/>
+        </div>
+
+        <!-- menu de navigation pour les grands écrans -->
+        <div class="nav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="../accueil/accueil.html">ACCUEIL</a></li>
+                <li class="nav-item"><a href="../services/services.html">NOS SERVICES</a></li>
+                <li class="nav-item"><a href="../valeurs/valeurs.html">NOS VALEURS</a></li>
+                <li class="nav-item"><a href="../objectifs/objectifs.html">NOS OBJECTIFS</a></li>
+                <li class="nav-item"><a href="../contacts/contacts.html">CONTACTEZ-NOUS</a></li>
+            </ul>
+        </div>
+
+        <!--menu de navigation pour les petits écrans -->
+        <div class="dropdown">
+            <button class="menu" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="accueil.html">ACCUEIL</a></li>
+              <li><a class="dropdown-item" href="../services/services.html">NOS SERVICES</a></li>
+              <li><a class="dropdown-item" href="../valeurs/valeurs.html">NOS VALEURS</a></li>
+              <li><a class="dropdown-item" href="../objectifs/objectifs.html">NOS OBJECTIFS</a></li>
+              <li><a class="dropdown-item active" href="../contacts/contacts.html">CONTACTEZ-NOUS</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Candidature Spontannée</h1>
+        <form>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nom" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Prénom" required>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <input type="date" class="form-control" placeholder="Date de naissance" required>
+                </div>
+                <div class="col">
+                    <input type="tel" class="form-control" placeholder="Téléphone : 0123456789" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nationalité" required>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="E-mail" required>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <textarea class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 130px" required></textarea>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Adresse : num, rue" required>
+                    <input type="tel" class="form-control" placeholder="Code postal" pattern="[0-9]{5}" required>
+                    <input type="text" class="form-control" placeholder="Ville" required>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <label>CV</label>
+                    <input type="file" class="form-control" accept=".jpg,.jpeg,.jpe,.gif,.png,.bmp,.tiff,.tif,.webp,.ico,.heic,.asf,.asx,.wmv,.wmx,.wm,.avi,.divx,.mov,.qt,.mpeg,.mpg,.mpe,.mp4,.m4v,.ogv,.webm,.mkv,.3gp,.3gpp,.3g2,.3gp2,.txt,.asc,.c,.cc,.h,.srt,.csv,.tsv,.ics,.rtx,.css,.vtt,.mp3,.m4a,.m4b,.aac,.ra,.ram,.wav,.ogg,.oga,.flac,.mid,.midi,.wma,.wax,.mka,.rtf,.pdf,.class,.tar,.zip,.gz,.gzip,.rar,.7z,.psd,.xcf,.doc,.pot,.pps,.ppt,.wri,.xla,.xls,.xlt,.xlw,.mpp,.docx,.docm,.dotx,.dotm,.xlsx,.xlsm,.xlsb,.xltx,.xltm,.xlam,.pptx,.pptm,.ppsx,.ppsm,.potx,.potm,.ppam,.sldx,.sldm,.onetoc,.onetoc2,.onepkg,.oxps,.xps,.odt,.odp,.ods,.odg,.odc,.odb,.odf,.wp,.wpd,.key,.numbers,.pages,.json" required>
+                </div>
+                <div class="col">
+                    <label>Lettre de motivation</label>
+                    <input type="file" class="form-control" accept=".jpg,.jpeg,.jpe,.gif,.png,.bmp,.tiff,.tif,.webp,.ico,.heic,.asf,.asx,.wmv,.wmx,.wm,.avi,.divx,.mov,.qt,.mpeg,.mpg,.mpe,.mp4,.m4v,.ogv,.webm,.mkv,.3gp,.3gpp,.3g2,.3gp2,.txt,.asc,.c,.cc,.h,.srt,.csv,.tsv,.ics,.rtx,.css,.vtt,.mp3,.m4a,.m4b,.aac,.ra,.ram,.wav,.ogg,.oga,.flac,.mid,.midi,.wma,.wax,.mka,.rtf,.pdf,.class,.tar,.zip,.gz,.gzip,.rar,.7z,.psd,.xcf,.doc,.pot,.pps,.ppt,.wri,.xla,.xls,.xlt,.xlw,.mpp,.docx,.docm,.dotx,.dotm,.xlsx,.xlsm,.xlsb,.xltx,.xltm,.xlam,.pptx,.pptm,.ppsx,.ppsm,.potx,.potm,.ppam,.sldx,.sldm,.onetoc,.onetoc2,.onepkg,.oxps,.xps,.odt,.odp,.ods,.odg,.odc,.odb,.odf,.wp,.wpd,.key,.numbers,.pages,.json" required>
+                </div>
+            </div>
+
+            <!--div class="wpforms-submit-container">
+                <button type="submit" class="btn" data-alt-text="Envoi..." data-submit-text="Postuler">Postuler</button>
+            </div-->
+            
+            <button type="submit" class="btn">Postuler</button>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -35,73 +35,78 @@
 }
 
 .btn-close{
-    margin-bottom: 50px;
+    margin: 0;
+}
+
+.contenu h1{
+    font-size: 3vw;
+    margin-top: 30px;
+}
+
+.contenu p{
+    font-size: 1.5vw;
 }
 
 .data{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5vh;
+    left: 5%;
     text-decoration: none;
     text-align: center;
     color: black;
     background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(9px);
-    padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: 20px;
     display: none;
 }
 
 .cloud{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5vh;
+    left: 5%;
     text-decoration: none;
     text-align: center;
     color: black;
     background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(9px);
-    padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: 20px;
     display: none;
 }
 
 .devops{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5vh;
+    left: 5%;
     text-decoration: none;
     text-align: center;
     color: black;
     background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(9px);
-    padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: 20px;
     display: none;
 }
 
 .digital{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5vh;
+    left: 5%;
     text-decoration: none;
     text-align: center;
     color: black;
     background-color: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(9px);
-    padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: 20px;
     display: none;
 }
 
-.contenu1{
+.contenu{
     display: block;
-    margin-top: -600px;
-}
-
-.contenu2{
-    display: block;
-    margin-top: -600px;
-}
-
-.contenu3{
-    display: block;
-    margin-top: -600px;
-}
-
-.contenu4{
-    display: block;
-    margin-top: -600px;
 }

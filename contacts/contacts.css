@@ -1,0 +1,47 @@
+.contenu{
+    background-color: rgb(0, 67, 94);
+}
+
+.contenu form{
+    padding: 50px 10vw;
+}
+
+.form-control{
+    margin: 10px;
+}
+
+.contenu p{
+    text-align: center;
+    font-family: Gill Sans Extrabold;
+    font-size: 6vw;
+    color: rgb(41, 199, 247);
+}
+
+.contenu .btn{
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10%;
+    margin-left: 47%;
+}
+
+.contenu .btn:hover{
+    background-color: rgb(41, 199, 247);
+    transition: all 1s ease-in;
+}
+
+.contenu img{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-radius: 100%;
+}
+
+.contenu h3{
+    font-size: 17px;
+    margin-bottom: 50px;
+    color: azure;
+}
+
+.contenu .row{
+    text-align: center;
+}

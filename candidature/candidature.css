@@ -1,0 +1,32 @@
+.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7px);
+}
+
+.container form{
+    padding: 10px 90px;
+}
+
+.container h1{
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 7vw;
+    color: rgb(41, 199, 247);
+}
+
+.form-control{
+    margin: 10px;
+}
+
+.container .btn{
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10%;
+    margin-left: 47%;
+}
+
+.container .btn:hover{
+    background-color: rgb(41, 199, 247);
+    transition: all 1s ease-in;
+}

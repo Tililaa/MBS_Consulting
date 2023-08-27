@@ -74,9 +74,9 @@
                     <textarea class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 130px" required></textarea>
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Adresse : num, rue" required>
-                    <input type="tel" class="form-control" placeholder="Code postal" pattern="[0-9]{5}" required>
-                    <input type="text" class="form-control" placeholder="Ville" required>
+                    <input type="text" id="adresse" class="form-control" placeholder="Adresse : num, rue" required>
+                    <input type="tel" id="code" class="form-control" placeholder="Code postal" pattern="[0-9]{5}" required>
+                    <input type="text" id="ville" class="form-control" placeholder="Ville" required>
                 </div>
             </div>
 
@@ -90,14 +90,25 @@
                     <input type="file" class="form-control" accept=".jpg,.jpeg,.jpe,.gif,.png,.bmp,.tiff,.tif,.webp,.ico,.heic,.asf,.asx,.wmv,.wmx,.wm,.avi,.divx,.mov,.qt,.mpeg,.mpg,.mpe,.mp4,.m4v,.ogv,.webm,.mkv,.3gp,.3gpp,.3g2,.3gp2,.txt,.asc,.c,.cc,.h,.srt,.csv,.tsv,.ics,.rtx,.css,.vtt,.mp3,.m4a,.m4b,.aac,.ra,.ram,.wav,.ogg,.oga,.flac,.mid,.midi,.wma,.wax,.mka,.rtf,.pdf,.class,.tar,.zip,.gz,.gzip,.rar,.7z,.psd,.xcf,.doc,.pot,.pps,.ppt,.wri,.xla,.xls,.xlt,.xlw,.mpp,.docx,.docm,.dotx,.dotm,.xlsx,.xlsm,.xlsb,.xltx,.xltm,.xlam,.pptx,.pptm,.ppsx,.ppsm,.potx,.potm,.ppam,.sldx,.sldm,.onetoc,.onetoc2,.onepkg,.oxps,.xps,.odt,.odp,.ods,.odg,.odc,.odb,.odf,.wp,.wpd,.key,.numbers,.pages,.json" required>
                 </div>
             </div>
-
-            <!--div class="wpforms-submit-container">
-                <button type="submit" class="btn" data-alt-text="Envoi..." data-submit-text="Postuler">Postuler</button>
-            </div-->
             
-            <button type="submit" class="btn">Postuler</button>
+            <button type="submit" name="envoi" class="btn">Postuler</button>
 
         </form>
     </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: 'b67d7df9-5b5f-4273-8032-af691498b858',
+                To : '1mbsconsulting1@gmail.com',
+                From : document.getElementById('email').value,
+                Subject : "Nouveau formulaire soumis",
+                Body : 'Bonjour,<br/>Vous avez reçu un nouveau message de :<br/><br/>Nom : '+document.getElementById('nom').value+'<br/>Prénom : '+document.getElementById('prenom').value+'<br/>Ville de résidence : '+document.getElementById('ville').value+'<br/>E-mail : '+document.getElementById('email').value+'<br/>Sujet: '+document.getElementById('objet').value+'<br/>Message : '+document.getElementById('floatingTextarea2').value
+            }).then(
+                message => alert(message)
+                );
+        }
+    </script>
 </body>
 </html>

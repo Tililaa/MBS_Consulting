@@ -35,7 +35,10 @@
 }
 
 .btn-close{
-    margin: 0;
+    position: fixed;
+    right: 0;
+    margin: 10px;
+    color: red!important;
 }
 
 .contenu h1{
